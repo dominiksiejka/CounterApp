@@ -4,6 +4,8 @@
 
 [**click live demo of the project**](https://dominiksiejka.github.io/CounterApp)
 
+![CounterApp preview](./assets/CounterApp.jpg)
+
 ## Table of Contents
 
 - [About the Project](#description)
