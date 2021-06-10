@@ -75,4 +75,28 @@ window.addEventListener("DOMContentLoaded", () => {
       this.currentVal.value = time.toFixed(2);
     }
   }
+  let totalDuration = 0;
+  let flag = true;
+  let restTime = 0;
+
+  const newTimer = new Timer(input, playBtn, pouseBtn, resetBtn, {
+    onStart(duration) {
+      if (flag || restTime === 0) {
+        totalDuration = duration;
+      }
+    },
+
+    onStop() {
+      flag = false;
+    },
+    onReset() {
+      circle.setAttribute("stroke-dashoffset", 0);
+      flag = !flag;
+    },
+    onComplete(timeLeft) {
+      restTime = timeLeft;
+      const number = (perimiter * timeLeft) / totalDuration - perimiter;
+      circle.setAttribute("stroke-dashoffset", number);
+    },
+  });
 });
