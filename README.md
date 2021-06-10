@@ -2,7 +2,7 @@
 
 ## Demo
 
-[**click live demo of the project**](https://duckduckgo.com)
+[**click live demo of the project**](https://dominiksiejka.github.io/CounterApp)
 
 ## Table of Contents
 
